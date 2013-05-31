@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+
+--
+-- Name: ${2:NAME}; Type: TRIGGER; Schema: ${1:SCHEMA}; Owner: postgres
+--
+
+CREATE OR REPLACE TRIGGER ${2:NAME}
+    BEFORE ${3:UPDATE} ON ${4:TABLE}
+    FOR EACH ${5:ROW|STATEMENT}
+    WHEN ${6:CONDITION}
+    EXECUTE PROCEDURE ${7:FUNCTION()};
+
+$0
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>trigger</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+/**********************************************************************************************/
+
+CREATE TABLE ${1:NAME} (
+    modified_at     timestamptz NOT NULL DEFAULT now(),
+    modified_by     varchar     NOT NULL DEFAULT standard.get_uwnetid(),
+    id              serial      PRIMARY KEY,
+    $0
+);
+
+COMMENT ON TABLE ${1:NAME} IS 'DR: ${2:DESCRIPTION} (${3:DATE})';
+
+GRANT SELECT, INSERT, UPDATE ON TABLE ${1:NAME} TO PUBLIC;
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>oldtable</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

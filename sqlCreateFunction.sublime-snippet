@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+/**********************************************************************************************/
+
+CREATE OR REPLACE FUNCTION ${1:NAME(PARAM)} RETURNS ${2:RETURN_TYPE}
+    LANGUAGE plpgsql
+    VOLATILE
+    SECURITY INVOKER
+    AS \$_\$
+/*  Function:     ${1:NAME(PARAM)}
+    Description:  ${3:DESCRIPTION}
+    Affects:      
+    Arguments:    
+    Returns:      ${2:RETURN_TYPE}
+*/
+DECLARE
+BEGIN
+EXCEPTION
+    WHEN OTHERS THEN null;
+END;
+\$_\$;
+
+COMMENT ON FUNCTION ${1:NAME(PARAM)} IS 'DR: ${3:DESCRIPTION} (${4:DATE})';
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>oldfun</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

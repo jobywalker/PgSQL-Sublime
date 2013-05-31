@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+/**********************************************************************************************/
+
+CREATE VIEW ${1:NAME} ($0) 
+	AS SELECT 
+    	FROM 
+    	JOIN 
+    	WHERE ;
+
+COMMENT ON VIEW ${1:NAME} IS 'DR: ${2:DESCRIPTION} (${3:DATE})';
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>oldview</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>
