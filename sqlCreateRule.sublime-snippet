@@ -1,10 +1,12 @@
 <snippet>
 	<content><![CDATA[
-/**********************************************************************************************/
+--
+-- Name: ${2:NAME}; Type: RULE; Schema: {$1:SCHEMA}; Owner: postgres
+--
 
-CREATE OR REPLACE RULE ${1:NAME} AS ON ${2:METHOD}
-    TO ${3:TABLE}
-    DO INSTEAD ${4:NOTHING};
+CREATE OR REPLACE RULE ${2:NAME} AS ON ${3:METHOD}
+    TO ${4:TABLE}
+    DO INSTEAD ${5:NOTHING};
 $0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

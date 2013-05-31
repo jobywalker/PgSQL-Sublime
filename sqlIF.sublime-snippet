@@ -2,6 +2,10 @@
     <content><![CDATA[
 IF $1 THEN
     $0
+ELSEIF  THEN
+
+ELSE
+
 END IF;
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

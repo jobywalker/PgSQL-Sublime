@@ -1,30 +1,32 @@
 <snippet>
 	<content><![CDATA[
-/**********************************************************************************************/
+SET search_path = ${1:SCHEMA}, pg_catalog;
 
-CREATE OR REPLACE FUNCTION ${1:NAME(PARAM)} RETURNS ${2:RETURN_TYPE}
-    LANGUAGE plpgsql
-    VOLATILE
-    SECURITY INVOKER
+CREATE OR REPLACE FUNCTION ${2:NAME(PARAM)} RETURNS ${3:RETURN_TYPE}
+    LANGUAGE plpgsql VOLATILE SECURITY INVOKER
     AS \$_\$
-/*  Function:     ${1:NAME(PARAM)}
-    Description:  ${3:DESCRIPTION}
-    Affects:      
-    Arguments:    
-    Returns:      ${2:RETURN_TYPE}
+/*  Function:     ${1:SCHEMA}.${2:NAME(PARAM)}
+    Description:  ${4:DESCRIPTION}
+    Affects:      ${5}
+    Arguments:    ${6}
+    Returns:      ${3:RETURN_TYPE}
 */
 DECLARE
+    ${0}
 BEGIN
 EXCEPTION
-    WHEN OTHERS THEN null;
+    WHEN OTHERS THEN RETURN NULL;
 END;
 \$_\$;
 
-COMMENT ON FUNCTION ${1:NAME(PARAM)} IS 'DR: ${3:DESCRIPTION} (${4:DATE})';
+
+ALTER FUNCTION ${1:SCHEMA}.${2:NAME(PARAM)} OWNER TO postgres;
+
+COMMENT ON FUNCTION ${2:NAME(PARAM)} IS 'DR: ${4:DESCRIPTION} (${7:DATE})';
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>oldfun</tabTrigger>
+	<tabTrigger>functiononly</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.sql</scope>
 </snippet>
