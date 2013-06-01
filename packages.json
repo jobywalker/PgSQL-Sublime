@@ -10,8 +10,8 @@
             "platforms": {
                 "*": [
                     {
-                        "version": "0.1.0",
-                        "url": "https://github.com/jobywalker/PgSQL-Sublime/zip/v0.1.0"
+                        "version": "0.1.1",
+                        "url": "https://github.com/jobywalker/PgSQL-Sublime/archive/v0.1.1.zip"
                     }
                 ]
             }
