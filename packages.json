@@ -1,0 +1,20 @@
+{
+    "schema_version": "1.2",
+    "packages": [
+        {
+            "name": "PgSQL",
+            "description": "Support PostgreSQL-isms including PL/PGSQL",
+            "author": "Joby Walker (@jobywalker)",
+            "homepage": "https://github.com/jobywalker/PgSQL-Sublime",
+            "last_modified": "2013-05-31 08:46:00",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "0.1.0",
+                        "url": "https://github.com/jobywalker/PgSQL-Sublime/zip/v0.1.0"
+                    }
+                ]
+            }
+        }
+    ]
+}
