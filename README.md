@@ -1,35 +1,28 @@
-================
-%(package_name)s
-================
+# PgSQL-Sublime
 
-<main description>
+Support PostgreSQL-isms including PL/PGSQL
 
 
-The Problem
-===========
+## The Problem
 
-<problem this package tries to solve>
+Initially adds snippets for DDL objects in the PostgreSQL dump format
 
 
-Getting Started
-===============
+## Installation
+### Sublime Package Control
 
-- Install `%(package_name)s`_
+The preferred method of installation is via [Sublime Package Control](http://wbond.net/sublime_packages/package_control).
 
-.. _%(package_name)s: https://
+1. [Install Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
+2. From inside Sublime Text 2, open Package Control's Command Pallet: CTRL+SHIFT+P (Windows, Linux) or CMD+SHIFT+P on Mac.
+3. Type `install package` and hit Return. A list of available packages will be displayed.
+4. Type `PgSQL` and hit Return. The package will be downloaded to the appropriate directory.
+5. Restart Sublime Text 2 to complete installation. Open an SQL file and use.
 
-If you're running a full installation of Sublime Text, simply doublelick on the
-``.sublime-package`` file. If you're running a portable installation, you need
-to perform an `installation by hand`_.
+### Manual Installation
 
-.. _installation by hand: http://sublimetext.info/docs/extensibility/packages.html#installation-of-packages-with-sublime-package-archives
-
-Once installed, run the following command from the Python console (``Ctrl+```)::
-
-      view.run_command("COMMAND")
-
-Alternatively, you can define a new key binding for this command.
-
-How to Use
-==========
-
+1. Download or clone this repository to a directory `PgSQL` in the Sublime Text 2 Packages directory for your platform:
+    * Mac: `git clone https://github.com/jobywalker/PgSQL-Sublime.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/PgSQL`
+    * Windows: `git clone https://github.com/jobywalker/PgSQL-Sublime.git %APPDATA%\Sublime/ Text/ 2/\PgSQL`
+    * Linux: `git clone https://github.com/jobywalker/PgSQL-Sublime.git ~/.Sublime\ Text\ 2/Packages/PgSQL`
+2. Restart Sublime Text 2 to complete installation. Open an SQL file and use.
