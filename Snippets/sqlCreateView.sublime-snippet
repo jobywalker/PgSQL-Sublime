@@ -49,4 +49,6 @@ GRANT SELECT ON TABLE ${2:NAME} TO PUBLIC;
     <tabTrigger>view</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create View</description>
 </snippet>

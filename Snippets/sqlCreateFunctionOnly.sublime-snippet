@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 SET search_path = ${1:SCHEMA}, pg_catalog;
 
 CREATE OR REPLACE FUNCTION ${2:NAME(PARAM)} RETURNS ${3:RETURN_TYPE}
@@ -25,8 +25,10 @@ ALTER FUNCTION ${1:SCHEMA}.${2:NAME(PARAM)} OWNER TO postgres;
 COMMENT ON FUNCTION ${2:NAME(PARAM)} IS 'DR: ${4:DESCRIPTION} (${7:DATE})';
 
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>functiononly</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.sql</scope>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>functionplpgonly</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create PLPGSQL Function (brief)</description>
 </snippet>

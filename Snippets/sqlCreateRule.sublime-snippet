@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 --
 -- Name: ${2:NAME}; Type: RULE; Schema: {$1:SCHEMA}; Owner: postgres
 --
@@ -9,8 +9,10 @@ CREATE OR REPLACE RULE ${2:NAME} AS ON ${3:METHOD}
     DO INSTEAD ${5:NOTHING};
 $0
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>rule</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.sql</scope>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rule</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create Rule</description>
 </snippet>

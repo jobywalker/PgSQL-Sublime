@@ -17,4 +17,6 @@ $0
     <tabTrigger>trigger</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create Trigger</description>
 </snippet>

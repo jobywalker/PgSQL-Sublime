@@ -50,7 +50,9 @@ COMMENT ON FUNCTION ${2:NAME(PARAM)} IS 'DR: ${4:DESCRIPTION} (${7:DATE})';
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>functionpage</tabTrigger>
+    <tabTrigger>functionplpgpage</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create PLPGSQL Function (page)</description>
 </snippet>

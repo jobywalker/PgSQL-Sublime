@@ -39,4 +39,6 @@ GRANT ALL ON SCHEMA ${1:NAME} TO PUBLIC;
     <tabTrigger>schema</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>Create Schema</description>
 </snippet>
