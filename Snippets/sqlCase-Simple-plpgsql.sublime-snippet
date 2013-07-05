@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+CASE $1
+    WHEN $2 THEN
+        $3
+    ELSE
+        $4
+END CASE;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>CASEsimpleplpgsql</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>CASE expr WHEN (plpgsql)</description>
+</snippet>
