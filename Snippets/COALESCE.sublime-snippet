@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[COALESCE($1, $2)]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>COALESCE</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+    <!-- Optional: Set displayed description of snippet -->
+    <description>COALESCE()</description>
+</snippet>
