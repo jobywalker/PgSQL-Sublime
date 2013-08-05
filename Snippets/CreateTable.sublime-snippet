@@ -42,6 +42,8 @@ REVOKE ALL ON TABLE ${2:NAME} FROM postgres;
 GRANT ALL ON TABLE ${2:NAME} TO postgres;
 GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ${2:NAME} TO PUBLIC;
 
+-- Include permissions for sequence if id is a serial
+-- GRANT USAGE ON SEQUENCE ${2:NAME}_id_seq TO PUBLIC;
 
 --
 -- PostgreSQL database dump complete
