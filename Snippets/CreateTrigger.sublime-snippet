@@ -5,7 +5,7 @@
 -- Name: ${2:NAME}; Type: TRIGGER; Schema: ${1:SCHEMA}; Owner: postgres
 --
 
-CREATE OR REPLACE TRIGGER ${2:NAME}
+CREATE TRIGGER ${2:NAME}
     BEFORE ${3:UPDATE} ON ${4:TABLE}
     FOR EACH ${5:ROW|STATEMENT}
     WHEN ${6:CONDITION}
